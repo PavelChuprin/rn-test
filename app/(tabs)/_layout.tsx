@@ -50,11 +50,24 @@ export default function TabLayout() {
                 }}
             />
             <Tabs.Screen
-                name="custom"
+                name="tamagui"
                 options={{
-                    title: "ЦД",
+                    title: "TamagUI",
                     tabBarIcon: ({ color }) => (
-                        <IconSymbol size={28} name="star.fill" color={color} />
+                        <IconSymbol size={28} name="style.fill" color={color} />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="reanimated"
+                options={{
+                    title: "Reanimated",
+                    tabBarIcon: ({ color }) => (
+                        <IconSymbol
+                            size={28}
+                            name="animation.fill"
+                            color={color}
+                        />
                     ),
                 }}
             />

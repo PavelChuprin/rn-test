@@ -1,11 +1,10 @@
 import React, { useState } from "react"
 
-import ThemedTextInput from "@/components/ThemedTextInput"
 import ParallaxScrollView from "@/components/ParallaxScrollView"
 import { ThemedText } from "@/components/ThemedText"
 import { ThemedView } from "@/components/ThemedView"
 import { Image, StyleSheet } from "react-native"
-import { Button, ButtonContext, ButtonText, Text, View } from "tamagui"
+import { Button, ButtonText, View } from "tamagui"
 
 export default function TabThreeScreen() {
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -23,12 +22,9 @@ export default function TabThreeScreen() {
             <ThemedView
                 style={{ backgroundImage: "@/assets/images/bg-auth.jpg" }}
             >
-                <Text fontSize="$9" color="$color.black1" marginBottom={10}>
+                <ThemedText type="title" style={styles.stepContainer}>
                     Цифровой двойник!
-                </Text>
-                {/* <ThemedText type="title" style={styles.stepContainer}>
-                    Цифровой двойник!
-                </ThemedText> */}
+                </ThemedText>
 
                 <Button
                     onPress={() => setIsOpen((prev) => !prev)}
