@@ -52,9 +52,9 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="custom"
                 options={{
-                    title: "Вкладка",
+                    title: "ЦД",
                     tabBarIcon: ({ color }) => (
-                        <IconSymbol size={28} name="house.fill" color={color} />
+                        <IconSymbol size={28} name="star.fill" color={color} />
                     ),
                 }}
             />
